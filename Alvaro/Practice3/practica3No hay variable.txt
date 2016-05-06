@@ -1,0 +1,14 @@
+Practice 
+question 2
+explain the error displayed
+
+
+condicional1=25
+
+puts "No esta declarada la variable Condicional3 "
+puts condicional1<condicional3
+
+undefined local variable or method 'condicional3' for main:object(NameError)
+This error makes us reference to the variable is not defined in our program 
+but in our case the variable does not even exist and that is why we call 
+something that is not stated that the error arises
