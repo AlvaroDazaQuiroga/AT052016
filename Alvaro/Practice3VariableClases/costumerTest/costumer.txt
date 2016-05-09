@@ -1,0 +1,12 @@
+$ ruby class_costumer.rb
+Customer id 1
+Customer name Ana
+Customer address Sopocachi, LP
+Customer id 2
+Customer name Juan
+Customer address Melchor Perez, CBBA
+Customer id 3
+Customer name Alvarin
+Customer address Zona Norte, Potosi
+
+
