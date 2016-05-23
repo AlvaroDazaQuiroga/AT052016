@@ -1,0 +1,114 @@
+Researcho of BDD
+-When and why was defined
+-Most important aspects
+-Why is usefull en when be applied 
+-Which type of team could implement
+Estructure of a feature
+Estructure of a user story 
+Estructure of scenario 
+Differences between BDD and  BDT 
+
+Development of the topic
+
+BDD  It was originally developed by Dan North  as a response to the
+ issues in Test Driven Development many developers find themselves 
+confused while using TDD and ATDD in their projects,
+ “programmers wanted to know where to start, what to test and what
+ not to test, how much to test in one go, what to call their tests,
+ and how to understand why a test fails  
+Some of the problems of TDD and ATDD are that they are focused 
+on verifying the state of the system rather than the desired behaviour 
+of the system
+BDD is focused on defining fine-grained specifications 
+of the behaviour of the targeting system, in a way that they can be 
+automated. The main goal of BDD is to get executable specifications 
+of a system
+BDD relies on ATDD, but in BDD tests are clearly written and easily
+ understandable, because BDD provides a specific ubiquitous language
+ that helps stakeholders to specify their tests
+We have identified six main characteristics of BDD from the literature
+ review and toolkits analysis. 
+
+-Ubiquitous Language
+
+A ubiquitous language is a language whose structure comes from a
+ domain model. It contains the terms which will be used to define
+ the behavior of a system
+BDD itself also includes a pre-defined simple ubiquitous language
+ for the analysis process, which is domain independent. It is used
+ to structure user stories and scenarios
+
+-Iterative Decomposition Process
+
+in BDD the analysis starts with identification of the expected behaviours
+ of a system, which are more concrete and easy to identify
+A feature set splits a business outcome into a set of abstract features
+, which indicate what should be done to achieve the business outcome.
+ Feature sets are derived from discussions between customers and 
+developers on business outcomes. They need to be associated explicitly 
+to the business outcomes they help achieve. Sometimes, one feature set 
+may contain sub feature sets.
+User stories are user-oriented. User stories describe the interactions
+ between users and a system. There are three questions that should be 
+
+clarified by a user story:
+
+*What is the role of the user in the user story?
+*What feature does the user want?
+*What benefit can the user gain if the system provides the feature?
+*Plain Text Description with User Story and Scenario Templates
+
+The templates are defined using a simple ubiquitous language
+ that BDD provides. 
+Typically user stories are specified using the following template  
+
+[Story Title] (One line describing the story) 
+As a [Role]
+ I want a [Feature] 
+So that I can get [Benefit]
+
+The template for writing scenarios is as below:
+
+ Scenario 1: [Scenario Title]
+ Given [Context] And [Some more contexts]….
+ When [Event] Then [Outcome]
+ And [Some more outcomes]…. 
+Scenario2: [Scenario Title] ….
+
+-Automated Acceptance Testing with Mapping Rules
+
+Each scenario step is mapped to a test method that is located using
+ an annotation describing the step, and usually the test method has
+ the same name as the annotation text. The class containing the step 
+methods does not need to have the name of the scenario
+
+Cucumber can be integrated with tools like RSpec which allow
+ executing behaviour driven specifications. Cucumber uses regular
+ expressions to perform the mappings. The names of the steps defined
+ in the plain text scenarios should match (using a regular expression)
+ those of the methods in RSpec
+
+-Readable Behaviour Oriented Specification Code
+
+BDD suggests that code should be part of the system’s documentation, 
+which is in line with the agile values. Code should be readable, and
+ specification should be part of the code. 
+
+ The names of methods have to indicate what methods should do. 
+The names of classes and methods should be written in sentences.
+ Code should describe the behaviours of objects.
+
+-Behaviour Driven at Different Phases
+
+behaviour driven happens at different phases of software development
+ using the BDD approach. At the initial planning phase, behaviours
+ correspond to business outcomes. At the analysis phase, business
+ outcomes are decomposed into a set of features which capture the 
+behaviour of the targeting system.
+Automated Acceptance testing is an integral part of the implementation
+ in the BDD approach. Testing classes are derived from scenarios and
+ their names follow a set of mapping rules. In this way, a class name 
+specifies what the class should do or what the behaviour of the class is.
+ Developers are encouraged to think of the behaviour of the component
+ that they are developing, and the roles and responsibilities of other
+ objects it interacts with.
